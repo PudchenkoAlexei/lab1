@@ -1,0 +1,586 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f1e0;
+    color: #3e3d3a;
+    overflow-x: hidden;
+}
+
+.header-container {
+    width: 100%;
+    border: 1px solid #3e3d3a;
+}
+
+header {
+    background: #6e4427;
+    color: #f4e7dc;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    padding: 10px 20px;
+    background-color: #5c3a1e;
+    border: 3px solid #9a3c25;
+    color: #f4e7dc;
+}
+
+header .return-home {
+    position: absolute;
+    right: 30px;
+}
+
+header .return-home a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #f4e7dc;
+    padding: 10px;
+    background-color: #9a3c25;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header .return-home a:hover {
+    background-color: #6e4427;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    padding: 0;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #3e3d3a;
+}
+
+.grid-item {
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    border: 1px solid #3e3d3a;
+}
+
+.grid-item:nth-child(1) {
+    background-color: #8a5631;
+    color: #f4e7dc;
+}
+
+.grid-item:nth-child(2) {
+    background-color: #9a3c25;
+    color: #f4e7dc;
+}
+
+.grid-item:nth-child(3) {
+    background-color: #b15c35;
+    color: #f4e7dc;
+}
+
+.grid-item:nth-child(4) {
+    background-color: #d18552;
+    color: #f4e7dc;
+}
+
+.grid-item-first {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 50vh;
+    position: relative;
+    border: 1px solid #3e3d3a;
+}
+
+.text-left {
+    padding-right: 20px;
+    text-align: left;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.image-right {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.bottom-left-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 15px 30px;
+    background-color: #9a3c25;
+    color: #f4e7dc;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 300px;
+    text-align: center;
+}
+
+.bottom-left-button:hover {
+    background-color: #6e4427;
+}
+
+.grid-item-second {
+    background-image: url('https://blanknote.ua/image/catalog/category-pics/description/brendirovannye-izdeliya-iz-kozhi-1-mn-22-12.jpg');
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.panels-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.panel {
+    background-color: #f4e7dc;
+    color: #3e3d3a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.panel h3 {
+    font-size: 24px;
+    color: #6e4427;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.panel p {
+    font-size: 16px;
+    color: #3e3d3a;
+    text-align: left;
+    margin: 0;
+}
+
+.center-button-container {
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+
+.center-button {
+    background-color: #f4e7dc;
+    color: #3e3d3a;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.center-button:hover {
+    background-color: #6e4427;
+    transform: scale(1.05);
+}
+
+.grid-item-third {
+    background-color: #b15c35;
+    padding: 20px;
+    position: relative;
+    height: 600px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.grid-item-third h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f4e7dc;
+}
+
+.third-panels-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-items: center;
+}
+
+.grid-item-third .panel {
+    background-color: #f4e7dc;
+    color: #3e3d3a;
+    padding: 20px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 150px;
+    width: 80%;
+}
+
+.panel-number {
+    font-size: 80px;
+    font-weight: bold;
+    color: #6e4427;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-text {
+    text-align: left;
+}
+
+.panel-text h3 {
+    font-size: 22px;
+    margin: 0;
+    color: #3e3d3a;
+}
+
+.panel-text p {
+    font-size: 16px;
+    color: #3e3d3a;
+    margin-top: 10px;
+}
+
+.third-block-button {
+    display: block;
+    width: 250px;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: #6e4427;
+    color: #f4e7dc;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.third-block-button:hover {
+    background-color: #9a3c25;
+    transform: translateY(-5px);
+}
+
+.third-block-button:active {
+    background-color: #6e4427;
+    transform: translateY(0);
+}
+
+.grid-container-fourth {
+    position: relative;
+    padding: 30px;
+}
+
+.logo-fourth {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    padding: 10px 20px;
+    background-color: #5c3a1e;
+    border: 3px solid #9a3c25;
+    color: #f4e7dc;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.catalogs-container {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-gap: 20px;
+    padding: 50px 0;
+    justify-content: center;
+}
+
+.catalog {
+    background-color: #f4e7dc;
+    color: #3e3d3a;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.catalog:hover {
+    background-color: #6e4427;
+    color: #f4e7dc;
+    transform: scale(1.05);
+}
+
+.catalog:active {
+    background-color: #9a3c25;
+}
+
+.footer-container {
+    background-color: #6e4427;
+    color: #f4e7dc;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-container p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer-container a {
+    color: #f4e7dc;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+/* Медіа-запити для адаптивності */
+@media (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .panels-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .catalogs-container {
+        grid-template-columns: repeat(2, 250px);
+    }
+    .footer-container p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item {
+        padding: 20px;
+    }
+
+    .grid-item-first {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .bottom-left-button {
+        width: 250px;
+    }
+
+    .grid-item-second {
+        height: 400px;
+    }
+
+    .panels-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .panel {
+        width: 80%;
+    }
+
+    .third-panels-container {
+        grid-template-columns: 1fr;
+    }
+
+    .center-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .catalogs-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container p {
+        font-size: 14px;
+    }
+
+    .third-block-button {
+        width: 200px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 10px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 24px;
+        padding: 8px 16px;
+    }
+
+    .return-home a {
+        font-size: 14px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .grid-item {
+        padding: 15px;
+    }
+
+    .grid-item-first {
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item-third {
+        height: 500px;
+    }
+
+    .center-button {
+        padding: 12px 25px;
+        font-size: 15px;
+    }
+
+    .panel {
+        width: 90%;
+    }
+
+    .third-block-button {
+        width: 180px;
+        font-size: 15px;
+    }
+
+    .catalog {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 8px 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .return-home a {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .grid-container {
+        padding: 5px;
+    }
+
+    .grid-item {
+        padding: 10px;
+    }
+
+    .grid-item-first {
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item-second {
+        height: 300px;
+    }
+
+    .panels-container {
+        grid-template-columns: 1fr;
+    }
+
+    .panel {
+        width: 100%;
+    }
+
+    .center-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .third-block-button {
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .catalog {
+        font-size: 14px;
+    }
+
+    .footer-container p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .grid-item-third {
+        height: auto;
+        padding: 10px;
+    }
+
+    .third-panels-container {
+        grid-template-columns: 1fr; 
+        width: 100%;
+    }
+
+    .grid-item-third .panel {
+        width: 100%; 
+    }
+
+    .third-block-button {
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .catalogs-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .catalog {
+        font-size: 14px;
+        width: 100%; 
+    }
+
+    .footer-container p {
+        font-size: 12px; 
+    }
+}
